@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerMatch - Sustainable Career Platform</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">
+            <svg
+              class="logo-img"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="20"
+                cy="20"
+                r="18"
+                fill="#4CAF50"
+                stroke="#2E7D32"
+                stroke-width="2"
+              />
+              <path d="M20 12L25 22H15L20 12Z" fill="white" />
+              <path d="M20 28L15 18H25L20 28Z" fill="white" />
+            </svg>
+            <span class="logo-text">CareerMatch</span>
+          </a>
+
+          <ul class="nav-links">
+            <li><a href="#challenge">The Challenge</a></li>
+            <li><a href="#coaches">Our Coaches</a></li>
+            <li><a href="#quiz">Career Quiz</a></li>
+            <li><a href="#impact">Our Impact</a></li>
+          </ul>
+          <div class="language-switcher">
+            <button class="language-btn">
+              EN <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="language-dropdown">
+              <a href="#">English</a>
+              <a href="#">Español</a>
+              <a href="#">Français</a>
+              <a href="#">Deutsch</a>
+            </div>
+          </div>
+          <a href="#cta" class="btn">Get Started</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Find Your Sustainable Career Path</h1>
+        <p>
+          Discover careers that align with your skills, values, and the future
+          of our planet through our AI-powered matching platform.
+        </p>
+        <div class="btn-group">
+          <a href="#quiz" class="btn">Take the Quiz</a>
+          <a href="#coaches" class="btn btn-outline">Meet Our Coaches</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">87%</div>
+            <p>Higher job satisfaction for matched candidates</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">10K+</div>
+            <p>Successful career transitions</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">200+</div>
+            <p>Green companies in our network</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">4.9/5</div>
+            <p>Average user rating</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Challenge Section -->
+    <section id="challenge" class="challenge">
+      <div class="container">
+        <div class="section-title">
+          <h2>The Modern Career Challenge</h2>
+          <p>
+            Today's job market is changing rapidly, with sustainability at the
+            forefront. We help you navigate these changes.
+          </p>
+        </div>
+        <div class="challenge-grid">
+          <div class="challenge-card">
+            <div class="challenge-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>Rapid Industry Changes</h3>
+            <p>
+              Many traditional jobs are disappearing while new green jobs emerge
+              at an unprecedented rate.
+            </p>
+          </div>
+          <div class="challenge-card">
+            <div class="challenge-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3>Information Overload</h3>
+            <p>
+              With thousands of career options, it's hard to know which path is
+              right for you and the planet.
+            </p>
+          </div>
+          <div class="challenge-card">
+            <div class="challenge-icon">
+              <i class="fas fa-balance-scale"></i>
+            </div>
+            <h3>Purpose vs Paycheck</h3>
+            <p>
+              Finding work that's both financially rewarding and environmentally
+              responsible can feel impossible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coaches Section -->
+    <section id="coaches" class="coaches">
+      <div class="container">
+        <div class="section-title">
+          <h2>Meet Our Career Coaches</h2>
+          <p>
+            Our certified coaches specialize in sustainable career transitions
+            across industries.
+          </p>
+        </div>
+        <div class="coach-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="technology">
+            Technology
+          </button>
+          <button class="filter-btn" data-filter="business">Business</button>
+          <button class="filter-btn" data-filter="engineering">
+            Engineering
+          </button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+        <div class="coach-grid">
+          <div class="coach-card" data-category="technology">
+            <div
+              class="coach-image"
+              style="
+                background-image: url('https://randomuser.me/api/portraits/women/43.jpg');
+              "
+            ></div>
+            <div class="coach-info">
+              <h3>Sarah Johnson</h3>
+              <span class="coach-specialty">Green Tech Specialist</span>
+              <div class="coach-languages">
+                <span class="language-tag">English</span>
+                <span class="language-tag">Spanish</span>
+              </div>
+              <p>
+                Former software engineer now helping professionals transition to
+                sustainable tech roles.
+              </p>
+              <a href="#" class="btn btn-outline">Book Session</a>
+            </div>
+          </div>
+          <div class="coach-card" data-category="business">
+            <div
+              class="coach-image"
+              style="
+                background-image: url('https://randomuser.me/api/portraits/men/32.jpg');
+              "
+            ></div>
+            <div class="coach-info">
+              <h3>Michael Chen</h3>
+              <span class="coach-specialty">Sustainable Business</span>
+              <div class="coach-languages">
+                <span class="language-tag">English</span>
+                <span class="language-tag">Mandarin</span>
+              </div>
+              <p>
+                Helps professionals pivot to CSR and sustainable business
+                management roles.
+              </p>
+              <a href="#" class="btn btn-outline">Book Session</a>
+            </div>
+          </div>
+          <div class="coach-card" data-category="engineering">
+            <div
+              class="coach-image"
+              style="
+                background-image: url('https://randomuser.me/api/portraits/women/65.jpg');
+              "
+            ></div>
+            <div class="coach-info">
+              <h3>Priya Patel</h3>
+              <span class="coach-specialty">Renewable Energy</span>
+              <div class="coach-languages">
+                <span class="language-tag">English</span>
+                <span class="language-tag">Hindi</span>
+              </div>
+              <p>
+                Civil engineer turned career coach specializing in renewable
+                energy transitions.
+              </p>
+              <a href="#" class="btn btn-outline">Book Session</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="quiz-section">
+      <div class="container">
+        <div class="quiz-container">
+          <div class="quiz-header">
+            <h2>Career Match Quiz</h2>
+            <p>
+              Answer 10 simple questions to discover careers that match your
+              skills and sustainability values.
+            </p>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" id="quiz-progress"></div>
+          </div>
+          <div class="quiz-content" id="quiz-content">
+            <!-- Quiz questions will be inserted here by JavaScript -->
+          </div>
+          <div class="results" id="results">
+            <h2>Your Career Matches</h2>
+            <p>
+              Based on your answers, we've identified these sustainable career
+              paths that align with your skills and values.
+            </p>
+            <div class="career-card">
+              <h3>Sustainability Consultant</h3>
+              <span class="match-percentage">92% Match</span>
+              <p>
+                Help organizations reduce their environmental impact by
+                developing and implementing sustainable practices across their
+                operations.
+              </p>
+              <a href="#" class="btn">Explore This Path</a>
+            </div>
+            <div class="career-card">
+              <h3>Renewable Energy Engineer</h3>
+              <span class="match-percentage">85% Match</span>
+              <p>
+                Design and develop systems that harness renewable energy sources
+                like solar, wind, and geothermal power.
+              </p>
+              <a href="#" class="btn">Explore This Path</a>
+            </div>
+            <div class="career-card">
+              <h3>Circular Economy Specialist</h3>
+              <span class="match-percentage">78% Match</span>
+              <p>
+                Develop systems and processes that eliminate waste through the
+                continual use of resources in closed-loop cycles.
+              </p>
+              <a href="#" class="btn">Explore This Path</a>
+            </div>
+            <div class="btn-group">
+              <a href="#" class="btn">View All Matches</a>
+              <a href="#coaches" class="btn btn-outline">Talk to a Coach</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Impact</h2>
+          <p>
+            We measure success not just in careers changed, but in positive
+            environmental impact created.
+          </p>
+        </div>
+        <div class="impact-grid">
+          <div class="impact-card">
+            <div class="impact-number">5,200+</div>
+            <h3>Tons of CO2 Reduced</h3>
+            <p>Through green careers facilitated by our platform</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-number">1M+</div>
+            <h3>Liters of Water Saved</h3>
+            <p>Through sustainable practices implemented by our community</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-number">240+</div>
+            <h3>Green Companies Partnered</h3>
+            <p>Committed to sustainable business practices</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-number">94%</div>
+            <h3>User Satisfaction</h3>
+            <p>Of candidates report higher job satisfaction after transition</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta">
+      <div class="container">
+        <h2>Ready to Find Your Sustainable Career?</h2>
+        <p>
+          Join thousands of professionals who've found meaningful work that
+          makes a difference.
+        </p>
+        <div class="btn-group">
+          <a href="#quiz" class="btn">Take the Quiz</a>
+          <a href="#coaches" class="btn btn-outline">Meet Our Coaches</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>CareerMatch</h3>
+            <p>
+              Helping professionals find meaningful, sustainable careers since
+              2018.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#challenge">The Challenge</a></li>
+              <li><a href="#coaches">Our Coaches</a></li>
+              <li><a href="#quiz">Career Quiz</a></li>
+              <li><a href="#impact">Our Impact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul class="footer-links">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Career Guides</a></li>
+              <li><a href="#">Webinars</a></li>
+              <li><a href="#">Success Stories</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:hello@careermatch.com">hello@careermatch.com</a>
+              </li>
+              <li><a href="tel:+18005551234">+1 (800) 555-1234</a></li>
+              <li><a href="#">Support Center</a></li>
+              <li><a href="#">Press Inquiries</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            &copy; 2023 CareerMatch. All rights reserved. |
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
